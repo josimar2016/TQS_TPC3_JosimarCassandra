@@ -33,7 +33,7 @@ public class KeyEntryTest {
 
     @After
     public void tearDown() {
-//        entryA = null;
+        entryA = null;
         assertNull(entryA);
         System.out.println("}End test\n");
     }
@@ -63,11 +63,11 @@ public class KeyEntryTest {
     public void testToString() {
         System.out.println("testToString");
         StringBuilder builder = new StringBuilder();
-//        builder.append(entryA.getApplicationName());
+        builder.append(entryA.getApplicationName());
         builder.append("\t");
         builder.append(entryA.getUsername());
         builder.append("\t");
-//        builder.append(entryA.getPassword());
+        builder.append(entryA.getPassword());
 
         assertEquals("failed to format entry to string", entryA.toString(), builder.toString());
 

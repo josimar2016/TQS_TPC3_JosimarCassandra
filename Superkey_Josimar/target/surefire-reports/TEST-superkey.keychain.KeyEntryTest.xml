@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="superkey.keychain.KeyEntryTest" time="0.005" tests="6" errors="0" skipped="0" failures="6">
+<testsuite name="superkey.keychain.KeyEntryTest" time="0.003" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -59,70 +59,9 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testKey" classname="superkey.keychain.KeyEntryTest" time="0">
-    <failure message="expected null, but was:&lt;appx	xx	secret@@@&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected null, but was:<appx	xx	secret@@@>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotNull(Assert.java:755)
-	at org.junit.Assert.assertNull(Assert.java:737)
-	at org.junit.Assert.assertNull(Assert.java:747)
-	at superkey.keychain.KeyEntryTest.tearDown(KeyEntryTest.java:37)
-]]></failure>
-    <system-out><![CDATA[Start test{
-testKey
-]]></system-out>
-  </testcase>
-  <testcase name="testParse" classname="superkey.keychain.KeyEntryTest" time="0">
-    <failure message="expected null, but was:&lt;appx	xx	secret@@@&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected null, but was:<appx	xx	secret@@@>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotNull(Assert.java:755)
-	at org.junit.Assert.assertNull(Assert.java:737)
-	at org.junit.Assert.assertNull(Assert.java:747)
-	at superkey.keychain.KeyEntryTest.tearDown(KeyEntryTest.java:37)
-]]></failure>
-    <system-out><![CDATA[Start test{
-testParse
-]]></system-out>
-  </testcase>
-  <testcase name="testToString" classname="superkey.keychain.KeyEntryTest" time="0.001">
-    <failure message="failed to format entry to string expected:&lt;appx	xx	[secret@@@]&gt; but was:&lt;appx	xx	[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: failed to format entry to string expected:<appx	xx	[secret@@@]> but was:<appx	xx	[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at superkey.keychain.KeyEntryTest.testToString(KeyEntryTest.java:72)
-]]></failure>
-    <system-out><![CDATA[Start test{
-testToString
-]]></system-out>
-  </testcase>
-  <testcase name="testToString" classname="superkey.keychain.KeyEntryTest" time="0.001">
-    <failure message="expected null, but was:&lt;appx	xx	secret@@@&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected null, but was:<appx	xx	secret@@@>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotNull(Assert.java:755)
-	at org.junit.Assert.assertNull(Assert.java:737)
-	at org.junit.Assert.assertNull(Assert.java:747)
-	at superkey.keychain.KeyEntryTest.tearDown(KeyEntryTest.java:37)
-]]></failure>
-  </testcase>
-  <testcase name="testSetApplicationNameWithNull" classname="superkey.keychain.KeyEntryTest" time="0.001">
-    <failure message="expected null, but was:&lt;appx	xx	secret@@@&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected null, but was:<appx	xx	secret@@@>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotNull(Assert.java:755)
-	at org.junit.Assert.assertNull(Assert.java:737)
-	at org.junit.Assert.assertNull(Assert.java:747)
-	at superkey.keychain.KeyEntryTest.tearDown(KeyEntryTest.java:37)
-]]></failure>
-    <system-out><![CDATA[Start test{
-testSetApplicationNameWithNull
-]]></system-out>
-  </testcase>
-  <testcase name="testFormatAsCsv" classname="superkey.keychain.KeyEntryTest" time="0.002">
-    <failure message="expected null, but was:&lt;appx	xx	secret@@@&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected null, but was:<appx	xx	secret@@@>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotNull(Assert.java:755)
-	at org.junit.Assert.assertNull(Assert.java:737)
-	at org.junit.Assert.assertNull(Assert.java:747)
-	at superkey.keychain.KeyEntryTest.tearDown(KeyEntryTest.java:37)
-]]></failure>
-    <system-out><![CDATA[Start test{
-testFormatAsCsv
-]]></system-out>
-  </testcase>
+  <testcase name="testKey" classname="superkey.keychain.KeyEntryTest" time="0"/>
+  <testcase name="testParse" classname="superkey.keychain.KeyEntryTest" time="0.001"/>
+  <testcase name="testToString" classname="superkey.keychain.KeyEntryTest" time="0.001"/>
+  <testcase name="testSetApplicationNameWithNull" classname="superkey.keychain.KeyEntryTest" time="0"/>
+  <testcase name="testFormatAsCsv" classname="superkey.keychain.KeyEntryTest" time="0.001"/>
 </testsuite>
