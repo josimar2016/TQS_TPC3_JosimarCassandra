@@ -135,7 +135,7 @@ public class KeyChainTest {
         entryB.setPassword("secret@@@2");
 
         assertEquals("failed to find keyEntry on keyChain", entryA, keyChain.find(entryA.key()));
-        assertNotSame("keyEntry find equals null", entryB, keyChain.find(entryB.key()));
+        assertNotEquals("keyEntry find equals null", entryB, keyChain.find(entryB.key()));
     }
 
     /**
