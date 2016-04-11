@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  */
 public class KeyEntryComparatorTest {
 
-    private final KeyEntryComparator comparator = new KeyEntryComparator();
+    private KeyEntryComparator comparator = new KeyEntryComparator();
     private KeyEntry entryA, entryB;
 
     public KeyEntryComparatorTest() {
