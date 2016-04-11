@@ -25,21 +25,21 @@ public class KeyEntryComparatorTest {
 
     @Before
     public void setUp() {
-        System.out.println("Start test{");
-        entryA = new KeyEntry();
-        entryA.setApplicationName("appx");
-        entryA.setUsername("xx");
-        entryB = new KeyEntry();
-        entryB.setApplicationName("appy");
-        entryB.setUsername("yy");
+//        System.out.println("Start test{");
+//        entryA = new KeyEntry();
+//        entryA.setApplicationName("appx");
+//        entryA.setUsername("xx");
+//        entryB = new KeyEntry();
+//        entryB.setApplicationName("appy");
+//        entryB.setUsername("yy");
 
     }
 
     @After
     public void tearDown() {
-        entryA = null;
-        assertNull(entryA);
-        System.out.println("}End test\n");
+//        entryA = null;
+//        assertNull(entryA);
+//        System.out.println("}End test\n");
     }
 
     @Test

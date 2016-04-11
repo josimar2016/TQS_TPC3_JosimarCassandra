@@ -59,12 +59,12 @@ public class KeyChainTest {
      */
     @Test
     public void testValidMasterKey() {
-//        System.out.println("testValidMasterKey");
-//        try {
-//            KeyChain.from(userKeychainFile, new CipherTool(KEYCHAIN_MASTER_KEY));
-//        } catch (IOException ex) {
-//            fail("cannot create keyChain!");
-//        }
+        System.out.println("testValidMasterKey");
+        try {
+            KeyChain.from(userKeychainFile, new CipherTool(KEYCHAIN_MASTER_KEY));
+        } catch (IOException ex) {
+            fail("cannot create keyChain!");
+        }
 
     }
 
@@ -84,16 +84,16 @@ public class KeyChainTest {
 
     @Test
     public void testPut() {
-//        System.out.println("testPut");
-//        KeyChain keyChain = null;
-//        try {
-//            keyChain = KeyChain.from(userKeychainFile, new CipherTool(KEYCHAIN_MASTER_KEY));
-//        } catch (IOException ex) {
-//            fail("cannot create keyChain.");
-//        }
-//        keyChain.put(entryA);
-//
-//        assertEquals("failed to put keyEntry on keyChain", entryA.key(), keyChain.find(entryA.key()).key());
+        System.out.println("testPut");
+        KeyChain keyChain = null;
+        try {
+            keyChain = KeyChain.from(userKeychainFile, new CipherTool(KEYCHAIN_MASTER_KEY));
+        } catch (IOException ex) {
+            fail("cannot create keyChain.");
+        }
+        keyChain.put(entryA);
+
+        assertEquals("failed to put keyEntry on keyChain", entryA.key(), keyChain.find(entryA.key()).key());
 
     }
 
