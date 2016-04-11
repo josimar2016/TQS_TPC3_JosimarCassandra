@@ -1,1 +1,1 @@
-Ficheiro introduzido para testar quando uma alteração é empurrado para GitHub.
+Ficheiro introduzido para testar quando uma alteração é feita no para o repositório GitHub.
