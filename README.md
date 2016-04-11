@@ -1,2 +1,2 @@
 # TQS_TPC3_Josimar
-Demonstrar um ambiente de Continuous Integration (CI) com o Jenkins.
+Demonstração de um ambiente de Continuous Integration (CI) com o Jenkins com um código feito no tpc anterior.
