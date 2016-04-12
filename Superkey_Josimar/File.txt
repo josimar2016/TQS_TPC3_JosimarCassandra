@@ -1,0 +1,1 @@
+Criação do File.txt para verificar se houve alterações no repositório desde o último build a cada 1 minuto.
