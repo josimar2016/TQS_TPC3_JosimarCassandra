@@ -37,8 +37,8 @@ public class KeyChainTest {
         System.out.println("Start test{");
         entryA = new KeyEntry();
         entryA.setApplicationName("appx");
-        entryA.setUsername("xx");
-        entryA.setPassword("secret@@@");
+        //entryA.setUsername("xx");
+        //entryA.setPassword("secret@@@");
 
         try {
             originalkeyChain = KeyChain.from(userKeychainFile, new CipherTool(KEYCHAIN_MASTER_KEY));
@@ -78,7 +78,7 @@ public class KeyChainTest {
             fail("cannot create keyChain!");
         }
         keyChain.put(entryA);
-        keyChain.put(entryA);
+        //keyChain.put(entryA);
 
     }
 
@@ -91,7 +91,7 @@ public class KeyChainTest {
         } catch (IOException ex) {
             fail("cannot create keyChain.");
         }
-        keyChain.put(entryA);
+        //keyChain.put(entryA);
 
         assertEquals("failed to put keyEntry on keyChain", entryA.key(), keyChain.find(entryA.key()).key());
 
@@ -131,8 +131,8 @@ public class KeyChainTest {
 
         entryB = new KeyEntry();
         entryB.setApplicationName("appx2");
-        entryB.setUsername("xx2");
-        entryB.setPassword("secret@@@2");
+        //entryB.setUsername("xx2");
+        //entryB.setPassword("secret@@@2");
 
         assertEquals("failed to find keyEntry on keyChain", entryA, keyChain.find(entryA.key()));
         assertNotEquals("keyEntry find equals null", entryB, keyChain.find(entryB.key()));
@@ -152,7 +152,7 @@ public class KeyChainTest {
         }
         keyChain.put(entryA);
 
-        keyChain.save();
+        //keyChain.save();
 
         KeyChain keyChain2 = null;
         try {
@@ -178,8 +178,8 @@ public class KeyChainTest {
 
         entryB = new KeyEntry();
         entryB.setApplicationName("next");
-        entryB.setUsername("xxx");
-        entryB.setPassword("secret@@@xx");
+        //entryB.setUsername("xxx");
+        //entryB.setPassword("secret@@@xx");
 
         keyChain.put(entryB);
         keyChain.save();
