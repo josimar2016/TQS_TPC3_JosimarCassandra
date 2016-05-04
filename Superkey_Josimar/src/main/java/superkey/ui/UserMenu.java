@@ -6,10 +6,11 @@ import superkey.keychain.CipherTool;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.math.BigInteger;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import static superkey_old.SuperKey.nextSessionPass;
 
 /**
  *
@@ -27,10 +28,9 @@ public class UserMenu {
 
         currentScanner.useDelimiter("\\n");
         File userKeychainFile = new File(KEYCHAIN_FILE);
-        
+
         try {
             logger.info("using file " + userKeychainFile.getCanonicalPath());
-            
 
             KeyChain keyChain = KeyChain.from(userKeychainFile, new CipherTool(KEYCHAIN_MASTER_KEY));
 
@@ -102,7 +102,7 @@ public class UserMenu {
             }
             entry.setApplicationName(appName);
             entry.setUsername(userName);
-            
+
             keychain.put(entry);
             keychain.save();
         }
@@ -124,16 +124,22 @@ public class UserMenu {
                     + "0- Sair");
             System.out.print("Opção? ");
             op = currentScanner.nextInt();
-           
+
         } while (op < 0 || op > 3);
         return op;
     }
 
     private static String promptForString(String message) {
-        String input;               
+        String input;
         System.out.println(message);
         input = currentScanner.next();
         return input;
+    }
+
+    // Criar uma password complexa Alphanumerica
+    public static String nextSessionPass() {
+        Random rand = new Random();
+        return (new BigInteger(90, rand).toString(32));
     }
 
 }
